@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siam Al Huq | Technical Support & Infra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bgDark: '#0a0a0a',
+                        cardDark: '#111111',
+                        accent: '#00ff9d',
+                        accentDim: 'rgba(0, 255, 157, 0.1)',
+                        textGray: '#a3a3a3'
+                    },
+                    fontFamily: {
+                        mono: ['"Fira Code"', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #0a0a0a; color: white; }
+        .glitch-text:hover { text-shadow: 2px 0 #00ff9d, -2px 0 #ff00ff; }
+        .terminal-cursor::after { content: '|'; animation: blink 1s infinite; }
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+        .glass-card {
+            background: rgba(17, 17, 17, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-accent selection:text-black">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-card border-b border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="font-mono text-xl font-bold text-accent tracking-tighter">
+                &lt;Siam/&gt;
+            </div>
+            <div class="hidden md:flex space-x-8 font-mono text-sm text-gray-400">
+                <a href="#about" class="hover:text-accent transition">01. ABOUT</a>
+                <a href="#experience" class="hover:text-accent transition">02. EXP</a>
+                <a href="#govps" class="hover:text-accent transition">03. VENTURES</a>
+                <a href="#contact" class="hover:text-accent transition">04. CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="font-mono text-accent mb-4">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 text-white tracking-tight">
+                Siam Al Huq.
+            </h1>
+            <h2 class="text-4xl md:text-6xl font-bold text-textGray mb-8">
+                I build reliable infrastructure.
+            </h2>
+            <p class="max-w-xl text-gray-400 text-lg leading-relaxed mb-10">
+                I am a Technical Support Engineer and Founder specializing in <span class="text-accent">VPS Infrastructure</span>, <span class="text-accent">Python Automation</span>, and <span class="text-accent">Web3 Ecosystems</span>. I bridge the gap between complex servers and end-users.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#contact" class="px-8 py-4 border border-accent text-accent font-mono hover:bg-accentDim transition rounded">
+                    Get In Touch
+                </a>
+                <a href="https://govps.one" target="_blank" class="px-8 py-4 border border-gray-700 text-white font-mono hover:border-gray-500 transition rounded">
+                    View GovPS
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Certs -->
+    <section id="about" class="py-20 bg-cardDark">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="flex items-center text-2xl font-bold mb-10">
+                <span class="font-mono text-accent mr-2">01.</span> Technical Arsenal
+                <span class="h-px bg-gray-800 flex-grow ml-4"></span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-mono text-lg text-white mb-6">Core Technologies</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Python (Automation)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Linux / VPS</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Bash Scripting</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Solidity / Web3</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Flutter</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-accent">▹</span> <span>Technical Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-mono text-lg text-white mb-6">Verified Certifications</h3>
+                    <ul class="space-y-4 text-gray-400 text-sm font-mono">
+                        <li class="border-l-2 border-gray-700 pl-4 hover:border-accent transition">
+                            <div class="text-white">Google IT Automation</div>
+                            <div>Crash Course on Python (2022)</div>
+                        </li>
+                        <li class="border-l-2 border-gray-700 pl-4 hover:border-accent transition">
+                            <div class="text-white">Coursera Specialization</div>
+                            <div>Building DApps on Ethereum (2024)</div>
+                        </li>
+                        <li class="border-l-2 border-gray-700 pl-4 hover:border-accent transition">
+                            <div class="text-white">Google Cloud</div>
+                            <div>Getting Started w/ Flutter (2024)</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-24">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="flex items-center text-2xl font-bold mb-10">
+                <span class="font-mono text-accent mr-2">02.</span> Experience
+                <span class="h-px bg-gray-800 flex-grow ml-4"></span>
+            </h2>
+
+            <div class="space-y-12 border-l border-gray-800 ml-3 pl-8 relative">
+                
+                <!-- Role 1 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-accent border-4 border-bgDark"></span>
+                    <h3 class="text-xl font-bold text-white">Lead Technical Support</h3>
+                    <p class="font-mono text-accent text-sm mb-2">Datagram Network | Dec 2025 - Present</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 mt-4">
+                        <li>Managing technical support workflows for a community of 30,000+ members.</li>
+                        <li>Developing Python bots to automate moderation and user onboarding.</li>
+                        <li>Acting as the bridge between developers and end-users.</li>
+                    </ul>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative">
+                    <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full bg-gray-700 border-4 border-bgDark"></span>
+                    <h3 class="text-xl font-bold text-white">Founder & Infrastructure Lead</h3>
+                    <p class="font-mono text-accent text-sm mb-2">GovPS.one | Jan 2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-400 space-y-2 mt-4">
+                        <li>Bootstrapped a VPS hosting provider managing 50+ Linux instances.</li>
+                        <li>Responsible for server provisioning, security patching (UFW), and SSH management.</li>
+                        <li>Achieved 99.9% uptime SLA through proactive monitoring.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Project (GovPS) -->
+    <section id="govps" class="py-20 bg-cardDark">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="flex items-center text-2xl font-bold mb-10">
+                <span class="font-mono text-accent mr-2">03.</span> Featured Venture
+                <span class="h-px bg-gray-800 flex-grow ml-4"></span>
+            </h2>
+
+            <div class="glass-card p-8 rounded-lg relative overflow-hidden group">
+                <div class="relative z-10">
+                    <p class="font-mono text-accent text-sm mb-2">Infrastructure / Hosting</p>
+                    <h3 class="text-3xl font-bold text-white mb-4">GovPS.one</h3>
+                    <div class="bg-[#111] p-6 rounded-md mb-6 text-gray-400">
+                        <p>
+                            A fully operational infrastructure-as-a-service business. I built GovPS to provide affordable, reliable VPS solutions. It demonstrates my ability to manage 
+                            <strong>Linux systems</strong>, handle <strong>customer tickets</strong>, and ensure <strong>operational stability</strong>.
+                        </p>
+                    </div>
+                    <ul class="flex space-x-4 font-mono text-sm text-gray-500 mb-6">
+                        <li>Ubuntu</li>
+                        <li>Nginx</li>
+                        <li>Bash Automation</li>
+                        <li>WHMCS</li>
+                    </ul>
+                    <a href="https://govps.one" target="_blank" class="inline-block border-b border-accent text-white hover:text-accent transition pb-1">
+                        Visit Live Project ↗
+                    </a>
+                </div>
+                <div class="absolute top-0 right-0 w-64 h-64 bg-accent opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-32 text-center">
+        <div class="max-w-2xl mx-auto px-6">
+            <p class="font-mono text-accent mb-4">04. What's Next?</p>
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Get In Touch</h2>
+            <p class="text-gray-400 text-lg mb-10">
+                I am currently open to remote opportunities in Technical Support, Infrastructure Operations, and Web3.
+            </p>
+            <a href="mailto:siam.alhuq786@gmail.com" class="px-8 py-4 border border-accent text-accent font-mono hover:bg-accentDim transition rounded">
+                Say Hello
+            </a>
+            <p class="mt-8 font-mono text-sm text-gray-600">+880 1771-556568</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-600 font-mono text-xs">
+        <p>Built by Siam Al Huq using HTML & Tailwind CSS.</p>
+    </footer>
+
+</body>
+</html>
